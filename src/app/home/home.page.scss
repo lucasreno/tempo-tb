@@ -21,3 +21,52 @@ ion-segment-button{
   --indicator-color: #b1b8f7;
   padding: 3px 0;
 }
+
+ion-content{
+  --padding-top: 24px;
+  --padding-start: 30px;
+  --padding-end: 30px;
+}
+
+main{
+  background: linear-gradient(to bottom, #6ad7ef, #6672d8);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 24px;
+  margin-top: 36px;
+  border-radius: 24px;
+  .cidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -36px;
+    img{
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+    }
+  }
+  .maxmin{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    ion-icon{
+      font-size: 12px;
+      margin-right: 3px;
+      margin-left: 12px;
+    }
+    .max{ color: #ED7E17; }
+    .min{ color: #2D5A74; }
+  }
+  .temperatura{
+    margin-left: 12px;
+    font-weight: 600;
+    font-size: 76px;
+  }
+  .imagem-tempo{
+    position: absolute;
+    right: -10px;
+    width: 130px;
+    height: 130px;
+  }
+}
