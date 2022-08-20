@@ -70,3 +70,54 @@ main{
     height: 130px;
   }
 }
+
+.info-adicional{
+  border: 1px solid skyblue;
+  border-radius: 24px;
+  display: flex;
+  padding: 12px;
+  margin-top: 36px;
+}
+
+.borda-direita{
+  border-right: 1px solid skyblue;
+}
+
+.info{
+  text-align: center;
+  width: 100%;
+  img{
+    width: 34px;
+  }
+}
+
+.info-tag{
+  color:#555;
+  margin-top: 4px;
+}
+
+.info-resultado{
+  font-weight: 600;
+}
+
+h2{
+  font-weight: 700;
+  margin-top: 64px;
+}
+
+.proximas-horas{
+  display: flex;
+  justify-content: space-around;
+}
+
+.hora{
+  border: 1px solid skyblue;
+  border-radius: 12px;
+  padding: 6px 12px;
+  margin: 12px;
+  text-align: center;
+  img{
+    width: 30px;
+    margin: 4px;
+  }
+}
