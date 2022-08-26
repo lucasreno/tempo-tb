@@ -1,6 +1,6 @@
 import { Forecast } from "./forecast";
 
-export interface Results {
+export class Results {
     temp: number;
     date: string;
     time: string;

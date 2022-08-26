@@ -24,18 +24,18 @@
   <main>
     <div class="cidade">
       <img src="https://cdn-icons-png.flaticon.com/512/1239/1239242.png" alt="">
-      <h4>Itapeva-SP</h4>
+      <h4>{{result.city}}</h4>
     </div>
     <div class="imagem-tempo">
       <img src="./../../assets/sun.png" alt="">
     </div>
     <div class="maxmin">
       <ion-icon name="arrow-up-outline" class="max"></ion-icon>
-      <div>37º</div>
+      <div>{{result.forecast[0].max}}º</div>
       <ion-icon name="arrow-down-outline" class="min"></ion-icon>
-      <div>22º</div>
+      <div>{{result.forecast[0].min}}º</div>
     </div>
-    <div class="temperatura">32º</div>
+    <div class="temperatura">{{result.temp}}º</div>
   </main>
 
   <div class="info-adicional">
@@ -44,14 +44,14 @@
         src="https://cdn-icons-png.flaticon.com/512/1255/1255693.png?w=826&t=st=1660948804~exp=1660949404~hmac=ad0910e12c75b06438f3fcee4088642c95177df4b3d5141646923bd2155f7a38"
         alt="">
       <div class="info-tag">Vento</div>
-      <div class="info-resultado">12km/h</div>
+      <div class="info-resultado">{{result.wind_speedy}}</div>
     </div>
     <div class="info borda-direita">
       <img
         src="https://cdn-icons-png.flaticon.com/512/728/728093.png?w=826&t=st=1660948842~exp=1660949442~hmac=3b63cf051ea369d853e98512f0a0319203ae08d74a566de073bf28571909488b"
         alt="">
       <div class="info-tag">Umidade</div>
-      <div class="info-resultado">10%</div>
+      <div class="info-resultado">{{result.humidity}}%</div>
     </div>
     <div class="info">
       <img
