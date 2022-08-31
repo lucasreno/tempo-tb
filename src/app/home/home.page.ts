@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Results } from '../interface/results';
+import { Forecast } from '../interface/forecast';
 
 @Component({
   selector: 'app-home',
@@ -11,18 +12,23 @@ export class HomePage {
   result: Results = new Results();
 
   constructor(private http: HttpClient) {
-    this.result.forecast = [{
-      condition: '',
-      date: '',
-      description: '',
-      max: 0,
-      min: 0,
-      weekday: ''
-    }];
+    this.result.forecast = [
+      new Forecast(),
+      new Forecast(),
+      new Forecast(),
+      new Forecast(),
+      new Forecast(),
+      new Forecast(),
+      new Forecast(),
+      new Forecast(),
+      new Forecast(),
+      new Forecast(),
+    ];
   }
 
   ngOnInit(){
-    const url = 'https://cors-anywhere.herokuapp.com/https://api.hgbrasil.com/weather?woeid=457351';
+    const cors = 'https://cors-anywhere.herokuapp.com/';
+    const url = cors + 'https://api.hgbrasil.com/weather?woeid=457351';
     this.http.get(url).subscribe(
       response => this.result = response["results"]
     );
