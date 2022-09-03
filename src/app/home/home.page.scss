@@ -121,3 +121,14 @@ h2{
     margin: 4px;
   }
 }
+
+.previsao{
+  display: flex;
+  align-items: center;
+  .max{ color: #ED7E17; }
+  .min{ color: #2D5A74; }
+  ion-icon{
+    width: 10px;
+    margin-right: 4px;
+  }
+}
